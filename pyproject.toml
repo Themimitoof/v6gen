@@ -2,7 +2,7 @@
 name = "v6gen"
 version = "0.1.0"
 description = "Simple tool for generating IPv6 addresses randomly or based by the hostname"
-authors = ["Michael Vieira <contact@mvieira.fr>"]
+authors = ["Michael Vieira <github@mvieira.fr>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
