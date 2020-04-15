@@ -58,14 +58,12 @@ def main():
 
     if network.prefixlen > 126:
         print(
-            "Woaw! This subnet is too small for me! I can't do nothing "
+            "Woaw! This subnet is too small for me! I can't do anything "
             "for you!"
         )
         exit(1)
 
-    if args.random:
-        print("bla!")
-    elif args.name:
+    if args.name:
         hostname = args.name.split(".")[0]
         hostname = re.sub(r"[^A-Za-z0-9]+", "", hostname)
 
@@ -88,7 +86,9 @@ def main():
             if ip:
                 print_result(ip)
 
-        print('Meh ¯\_(ツ)_/¯')
+        print("Meh ¯\_(ツ)_/¯")
+    else:
+        print("Still not implemented  ¯\_(ツ)_/¯")
 
 
 if __name__ == "__main__":
